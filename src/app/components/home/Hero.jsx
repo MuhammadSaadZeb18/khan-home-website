@@ -25,7 +25,7 @@ const Hero = () => {
   return (
 
 
-    
+
     <section id="home" className="relative">
       <div className="bigcontainer">
         <div className="overflow-hidden rounded-[21px] bg-white shadow-[0_40px_120px_rgba(15,42,113,0.12)]">

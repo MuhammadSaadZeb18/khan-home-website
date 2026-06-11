@@ -40,7 +40,7 @@ export default function Header() {
 
   const topBarClass = isSticky ? "hidden" : "";
   const headerClass = isSticky ? "fixed top-0 left-0 right-0 z-50" : "relative z-20";
-  const whiteBarClass = isSticky ? " bg-white " : " ";
+  const whiteBarClass = isSticky ? "backdrop-blur-sm bg-white/95 shadow-md" : "shadow-sm shadow-slate-200";
 
   return (
     <>
@@ -69,7 +69,7 @@ export default function Header() {
         </div>
 
         <div className={`${whiteBarClass}`}>
-          <div className="maincontainer mx-auto flex flex-wrap items-center justify-between gap-4 px-22 py-3">
+          <div className="maincontainer mx-auto flex flex-wrap items-center justify-between gap-4 py-3">
             <Link href="#home" className="flex items-center gap-3 text-slate-900">
               <Image src="/KhanHomeLogo.png" alt="Khan Home Logo" width={160} height={56} priority />
             </Link>
