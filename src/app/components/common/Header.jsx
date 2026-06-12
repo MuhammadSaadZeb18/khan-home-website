@@ -46,7 +46,7 @@ export default function Header() {
     <>
       {isSticky && <div aria-hidden="true" style={{ height }} />}
       <header ref={headerRef} className={headerClass}>
-        <div className={`bg-[#081d56] text-slate-100 transition-all ${topBarClass}`}>
+        <div className={`bg-[#081d56] text-slate-100 transition-all  ${topBarClass}`}>
           <div className="maincontainer mx-auto flex flex-col gap-3 px-0 py-1.5 text-sm md:flex-row md:items-center md:justify-between">
             <div className="flex flex-wrap items-center gap-4 text-slate-200">
               <span className="inline-flex items-center gap-2">
