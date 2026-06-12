@@ -25,56 +25,51 @@ const reviewers = [
 
 export default function AboutUs() {
   return (
-    <section id="about" className="relative overflow-hidden  py-16 md:py-20 lg:py-24">
-      <p className="pointer-events-none absolute left-6 top-5 select-none text-[72px] font-bold leading-none text-transparent [-webkit-text-stroke:1px_#c8d3e9] md:left-12 md:top-8 md:text-[112px] lg:left-16 lg:text-[142px]">
-        About Us
-      </p>
+    <section id="about" className="relative overflow-hidden bigcontainer  py-44">
+
 
       <div className="maincontainer relative grid gap-12 lg:grid-cols-[1.03fr_1fr] lg:items-center">
         <div className="relative min-h-90 sm:min-h-107.5 lg:min-h-128.75">
-          <div className="absolute left-0 top-11 h-72.5 w-[78%] overflow-hidden rounded-lg shadow-[0_18px_40px_rgba(15,42,113,0.18)] sm:h-91.25 lg:h-107.25">
+          <div  >
             <Image
-              src="/hero-bg.png"
+              src="/aboutus.svg"
               alt="Modern skyline towers"
               fill
               priority
               sizes="(min-width: 1024px) 43vw, 78vw"
-              className="object-cover object-center"
+              className="object-cover object-center rounded-[21px] "
             />
           </div>
+          <h1 className="pointer-events-none absolute -top-22 -left-8   select-none font-bold leading-none text-transparent [-webkit-text-stroke:1px_rgba(17,43,109,0.5)]">
+            About Us
+          </h1>
 
-          <div className="absolute right-[10%] top-20 h-56.25 w-[34%] rounded-[9px] border-[5px] border-primary sm:h-75 lg:right-[12%] lg:h-87.5" />
-
-          <div className="absolute bottom-4 right-0 h-38.75 w-[42%] overflow-hidden rounded-lg border-8 border-white shadow-[0_18px_32px_rgba(15,42,113,0.16)] sm:h-51.25 lg:bottom-10 lg:h-62.25">
-            <Image
-              src="/hero-bg.png"
-              alt="Glass building detail"
-              fill
-              sizes="(min-width: 1024px) 24vw, 42vw"
-              className="scale-125 object-cover object-right"
-            />
-          </div>
         </div>
 
-        <div className="lg:pl-4">
-          <h2 className="text-[38px] font-semibold leading-tight tracking-normal text-secondary md:text-[52px]">
+        <div >
+          <h2 className="font-medium">
             Who We Are
           </h2>
-          <p className="mt-4 max-w-152.25 text-[14px] leading-[1.9] text-[#4f5663]">
-            Khan Home Group is a dynamic business conglomerate operating across multiple industries. Through our diverse portfolio of companies, we provide high-quality products, professional services, and innovative solutions that contribute to the growth of businesses and communities.
+          <p className="text-[16px] font-normal font-montserrat text-black/70 my-2 mb-8">
+
+            Khan Home Group is a dynamic business conglomerate operating across multiple industries. Through our diverse portfolio of companies, we provide high-quality products, professional services, and innovative solutions that contribute.
           </p>
 
-          <div className="mt-8 grid max-w-140 grid-cols-3 gap-5">
-            {stats.map((stat) => (
-              <div key={stat.label}>
-                <strong className="block text-[32px] font-semibold leading-none text-secondary md:text-[42px]">
-                  {stat.value}
-                </strong>
-                <span className="mt-2 block border-b border-slate-300 pb-2 text-[12px] leading-tight text-[#5e6570]">
-                  {stat.label}
-                </span>
-              </div>
-            ))}
+          <div>
+
+            <div className="flex justify-between my-2 flex-wrap">
+              {stats.map((stat) => (
+                <div key={stat.label}>
+                  <h2>
+                    {stat.value}
+                  </h2>
+                  <p className="text-black/70">
+                    {stat.label}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <div className="h-[0.5px] w-full bg-secondary/50"></div>
           </div>
 
           <div className="mt-8 flex flex-wrap items-center gap-5">
@@ -115,6 +110,6 @@ export default function AboutUs() {
           </a>
         </div>
       </div>
-    </section>
+    </section >
   );
 }
